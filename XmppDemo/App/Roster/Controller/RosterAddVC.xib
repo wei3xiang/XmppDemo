@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RosterAddVC" customModule="XmppDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="rosterNameTF" destination="HMd-Gl-d2h" id="bk1-Wh-FPd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="444"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV4-N4-lF8" userLabel="anchorView">
+                    <rect key="frame" x="0.0" y="0.0" width="268" height="444"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HMd-Gl-d2h">
+                            <rect key="frame" x="0.0" y="64" width="268" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HMd-Gl-d2h" secondAttribute="trailing" id="PtY-Ss-RUA"/>
+                        <constraint firstItem="HMd-Gl-d2h" firstAttribute="top" secondItem="IV4-N4-lF8" secondAttribute="top" constant="64" id="u5r-8A-nC6"/>
+                        <constraint firstItem="HMd-Gl-d2h" firstAttribute="leading" secondItem="IV4-N4-lF8" secondAttribute="leading" id="wOn-QV-hlX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IV4-N4-lF8" secondAttribute="bottom" id="BvH-hW-Jye"/>
+                <constraint firstItem="IV4-N4-lF8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RVn-oU-UbP"/>
+                <constraint firstAttribute="trailing" secondItem="IV4-N4-lF8" secondAttribute="trailing" id="hTI-yc-dpZ"/>
+                <constraint firstItem="IV4-N4-lF8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hfR-Eh-p47"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="284" y="233"/>
+        </view>
+    </objects>
+</document>

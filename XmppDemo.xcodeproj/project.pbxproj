@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6D8AE596EA7359729FF915E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B4E28093C87CCF91D2E1AB /* libPods.a */; };
+		CE094BFD1C7DA75C00CFB209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094BFC1C7DA75C00CFB209 /* AppDelegate.swift */; };
+		CE094C021C7DA75C00CFB209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE094C001C7DA75C00CFB209 /* Main.storyboard */; };
+		CE094C041C7DA75C00CFB209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE094C031C7DA75C00CFB209 /* Assets.xcassets */; };
+		CE094C071C7DA75C00CFB209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE094C051C7DA75C00CFB209 /* LaunchScreen.storyboard */; };
+		CE094C121C7DA75D00CFB209 /* XmppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094C111C7DA75D00CFB209 /* XmppDemoUITests.swift */; };
+		CE3126C41C8573BE0024689B /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3126C21C8573BE0024689B /* ChatVC.swift */; };
+		CE3126C51C8573BE0024689B /* ChatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3126C31C8573BE0024689B /* ChatVC.xib */; };
+		CE6CBD991C81DFF200F32256 /* ProfileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6CBD981C81DFF200F32256 /* ProfileVC.storyboard */; };
+		CE6DC2171C83E1F80049AA91 /* ProfileEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC2151C83E1F80049AA91 /* ProfileEditVC.swift */; };
+		CE6DC2221C8414F00049AA91 /* ProfileEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6DC2211C8414F00049AA91 /* ProfileEditVC.xib */; };
+		CE6DC2271C8431790049AA91 /* RosterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DC2251C8431790049AA91 /* RosterVC.swift */; };
+		CE6DC2281C8431790049AA91 /* RosterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6DC2261C8431790049AA91 /* RosterVC.xib */; };
+		CE8535541C86D54700E14C6F /* ChatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8535531C86D54700E14C6F /* ChatType.swift */; };
+		CE9283A61C85EC04001D7399 /* RosterAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9283A41C85EC04001D7399 /* RosterAddVC.swift */; };
+		CE9283A71C85EC04001D7399 /* RosterAddVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9283A51C85EC04001D7399 /* RosterAddVC.xib */; };
+		CE9956541C7F4CF20000B3FC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9956521C7F4CF20000B3FC /* RegisterVC.swift */; };
+		CE9956551C7F4CF20000B3FC /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9956531C7F4CF20000B3FC /* RegisterVC.xib */; };
+		CECAE4001C7EDF820075DD75 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE3FF1C7EDF820075DD75 /* UserModel.swift */; };
+		CECAE4051C7EF23A0075DD75 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE4041C7EF23A0075DD75 /* UIViewController+Extension.swift */; };
+		CECAE4091C7EFC0F0075DD75 /* AppTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE4071C7EFC0F0075DD75 /* AppTool.swift */; };
+		CECAE40A1C7EFC0F0075DD75 /* XmppTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE4081C7EFC0F0075DD75 /* XmppTool.swift */; };
+		CECAE4171C7EFCF80075DD75 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE4131C7EFCF80075DD75 /* LoginVC.swift */; };
+		CECAE4181C7EFCF80075DD75 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECAE4141C7EFCF80075DD75 /* LoginVC.xib */; };
+		CECAE4191C7EFCF80075DD75 /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE4151C7EFCF80075DD75 /* MineVC.swift */; };
+		CECAE41A1C7EFCF80075DD75 /* MineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECAE4161C7EFCF80075DD75 /* MineVC.xib */; };
+		CECAE41D1C7EFDAD0075DD75 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE41B1C7EFDAD0075DD75 /* MessageVC.swift */; };
+		CECAE41E1C7EFDAD0075DD75 /* MessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECAE41C1C7EFDAD0075DD75 /* MessageVC.xib */; };
+		CECAE4211C7EFDD90075DD75 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE41F1C7EFDD90075DD75 /* DiscoveryVC.swift */; };
+		CECAE4221C7EFDD90075DD75 /* DiscoveryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECAE4201C7EFDD90075DD75 /* DiscoveryVC.xib */; };
+		CED3C59C1C8099EC00502BBF /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3C59B1C8099EC00502BBF /* test.swift */; };
+		CED3C5CF1C80B05C00502BBF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3C5CD1C80B05C00502BBF /* ProfileVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE094C0E1C7DA75D00CFB209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE094BF11C7DA75C00CFB209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE094BF81C7DA75C00CFB209;
+			remoteInfo = XmppDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE094BF91C7DA75C00CFB209 /* XmppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE094BFC1C7DA75C00CFB209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
+		CE094C011C7DA75C00CFB209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE094C031C7DA75C00CFB209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		CE094C061C7DA75C00CFB209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE094C081C7DA75C00CFB209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
+		CE094C0D1C7DA75D00CFB209 /* XmppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE094C111C7DA75D00CFB209 /* XmppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmppDemoUITests.swift; sourceTree = "<group>"; };
+		CE094C131C7DA75D00CFB209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3126C21C8573BE0024689B /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		CE3126C31C8573BE0024689B /* ChatVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatVC.xib; sourceTree = "<group>"; };
+		CE6CBD981C81DFF200F32256 /* ProfileVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileVC.storyboard; sourceTree = "<group>"; };
+		CE6DC2151C83E1F80049AA91 /* ProfileEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditVC.swift; sourceTree = "<group>"; };
+		CE6DC2211C8414F00049AA91 /* ProfileEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileEditVC.xib; sourceTree = "<group>"; };
+		CE6DC2251C8431790049AA91 /* RosterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterVC.swift; sourceTree = "<group>"; };
+		CE6DC2261C8431790049AA91 /* RosterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RosterVC.xib; sourceTree = "<group>"; };
+		CE8535531C86D54700E14C6F /* ChatType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatType.swift; sourceTree = "<group>"; };
+		CE9283A41C85EC04001D7399 /* RosterAddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterAddVC.swift; sourceTree = "<group>"; };
+		CE9283A51C85EC04001D7399 /* RosterAddVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RosterAddVC.xib; sourceTree = "<group>"; };
+		CE9956521C7F4CF20000B3FC /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		CE9956531C7F4CF20000B3FC /* RegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		CECAE3FF1C7EDF820075DD75 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CECAE4041C7EF23A0075DD75 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		CECAE4071C7EFC0F0075DD75 /* AppTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTool.swift; sourceTree = "<group>"; };
+		CECAE4081C7EFC0F0075DD75 /* XmppTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmppTool.swift; sourceTree = "<group>"; };
+		CECAE4131C7EFCF80075DD75 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CECAE4141C7EFCF80075DD75 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		CECAE4151C7EFCF80075DD75 /* MineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
+		CECAE4161C7EFCF80075DD75 /* MineVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVC.xib; sourceTree = "<group>"; };
+		CECAE41B1C7EFDAD0075DD75 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		CECAE41C1C7EFDAD0075DD75 /* MessageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageVC.xib; sourceTree = "<group>"; };
+		CECAE41F1C7EFDD90075DD75 /* DiscoveryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		CECAE4201C7EFDD90075DD75 /* DiscoveryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryVC.xib; sourceTree = "<group>"; };
+		CED3C59B1C8099EC00502BBF /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		CED3C5CD1C80B05C00502BBF /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		CEF8A0DD1C7DE8DA00EA831A /* OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OC.h; path = ../../OC.h; sourceTree = "<group>"; };
+		D4B4E28093C87CCF91D2E1AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9850EA7E4F0F9F5AD5E8A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FE1943C483F228E3B837F507 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE094BF61C7DA75C00CFB209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D8AE596EA7359729FF915E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE094C0A1C7DA75D00CFB209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81C5E1D7234F3E9C9242C8F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF9850EA7E4F0F9F5AD5E8A4 /* Pods.debug.xcconfig */,
+				FE1943C483F228E3B837F507 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC35ACBBBB0833621B1AF397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4B4E28093C87CCF91D2E1AB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE094BF01C7DA75C00CFB209 = {
+			isa = PBXGroup;
+			children = (
+				CE094BFB1C7DA75C00CFB209 /* XmppDemo */,
+				CE094C101C7DA75D00CFB209 /* XmppDemoUITests */,
+				CE094BFA1C7DA75C00CFB209 /* Products */,
+				81C5E1D7234F3E9C9242C8F9 /* Pods */,
+				AC35ACBBBB0833621B1AF397 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE094BFA1C7DA75C00CFB209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE094BF91C7DA75C00CFB209 /* XmppDemo.app */,
+				CE094C0D1C7DA75D00CFB209 /* XmppDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE094BFB1C7DA75C00CFB209 /* XmppDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE4061C7EFC0F0075DD75 /* Tool */,
+				CECAE4031C7EF2110075DD75 /* Extension */,
+				CECAE3FB1C7ED72E0075DD75 /* Common */,
+				CECAE3FA1C7ED7240075DD75 /* App */,
+			);
+			path = XmppDemo;
+			sourceTree = "<group>";
+		};
+		CE094C101C7DA75D00CFB209 /* XmppDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE094C111C7DA75D00CFB209 /* XmppDemoUITests.swift */,
+				CE094C131C7DA75D00CFB209 /* Info.plist */,
+			);
+			path = XmppDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE3126C01C85736D0024689B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CE8535501C86D4E900E14C6F /* Model */,
+				CE3126C11C85736D0024689B /* Controller */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CE3126C11C85736D0024689B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE3126C21C8573BE0024689B /* ChatVC.swift */,
+				CE3126C31C8573BE0024689B /* ChatVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE6DC2231C84315C0049AA91 /* Roster */ = {
+			isa = PBXGroup;
+			children = (
+				CE3126C01C85736D0024689B /* Chat */,
+				CE6DC2241C84315C0049AA91 /* Controller */,
+			);
+			path = Roster;
+			sourceTree = "<group>";
+		};
+		CE6DC2241C84315C0049AA91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE6DC2251C8431790049AA91 /* RosterVC.swift */,
+				CE6DC2261C8431790049AA91 /* RosterVC.xib */,
+				CE9283A41C85EC04001D7399 /* RosterAddVC.swift */,
+				CE9283A51C85EC04001D7399 /* RosterAddVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE8535501C86D4E900E14C6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8535531C86D54700E14C6F /* ChatType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9956501C7F4CE40000B3FC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CE9956511C7F4CE40000B3FC /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CE9956511C7F4CE40000B3FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9956521C7F4CF20000B3FC /* RegisterVC.swift */,
+				CE9956531C7F4CF20000B3FC /* RegisterVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CECAE3FA1C7ED7240075DD75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE40C1C7EFC390075DD75 /* Message */,
+				CE6DC2231C84315C0049AA91 /* Roster */,
+				CECAE40B1C7EFC390075DD75 /* Discovery */,
+				CECAE40D1C7EFC390075DD75 /* Mine */,
+				CECAE4121C7EFC8B0075DD75 /* Other */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CECAE3FB1C7ED72E0075DD75 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE3FF1C7EDF820075DD75 /* UserModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CECAE4031C7EF2110075DD75 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE4041C7EF23A0075DD75 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CECAE4061C7EFC0F0075DD75 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE4071C7EFC0F0075DD75 /* AppTool.swift */,
+				CECAE4081C7EFC0F0075DD75 /* XmppTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CECAE40B1C7EFC390075DD75 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE41F1C7EFDD90075DD75 /* DiscoveryVC.swift */,
+				CECAE4201C7EFDD90075DD75 /* DiscoveryVC.xib */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		CECAE40C1C7EFC390075DD75 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE41B1C7EFDAD0075DD75 /* MessageVC.swift */,
+				CECAE41C1C7EFDAD0075DD75 /* MessageVC.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		CECAE40D1C7EFC390075DD75 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				CE9956501C7F4CE40000B3FC /* Register */,
+				CECAE40E1C7EFC5D0075DD75 /* Login */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		CECAE40E1C7EFC5D0075DD75 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE40F1C7EFC790075DD75 /* Controller */,
+				CECAE4101C7EFC790075DD75 /* Model */,
+				CECAE4111C7EFC790075DD75 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CECAE40F1C7EFC790075DD75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE4131C7EFCF80075DD75 /* LoginVC.swift */,
+				CECAE4141C7EFCF80075DD75 /* LoginVC.xib */,
+				CECAE4151C7EFCF80075DD75 /* MineVC.swift */,
+				CECAE4161C7EFCF80075DD75 /* MineVC.xib */,
+				CED3C5CD1C80B05C00502BBF /* ProfileVC.swift */,
+				CE6CBD981C81DFF200F32256 /* ProfileVC.storyboard */,
+				CE6DC2151C83E1F80049AA91 /* ProfileEditVC.swift */,
+				CE6DC2211C8414F00049AA91 /* ProfileEditVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CECAE4101C7EFC790075DD75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CECAE4111C7EFC790075DD75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CECAE4121C7EFC8B0075DD75 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CE094BFC1C7DA75C00CFB209 /* AppDelegate.swift */,
+				CE094C001C7DA75C00CFB209 /* Main.storyboard */,
+				CE094C031C7DA75C00CFB209 /* Assets.xcassets */,
+				CE094C051C7DA75C00CFB209 /* LaunchScreen.storyboard */,
+				CE094C081C7DA75C00CFB209 /* Info.plist */,
+				CEF8A0DD1C7DE8DA00EA831A /* OC.h */,
+				CED3C59B1C8099EC00502BBF /* test.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE094BF81C7DA75C00CFB209 /* XmppDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE094C161C7DA75D00CFB209 /* Build configuration list for PBXNativeTarget "XmppDemo" */;
+			buildPhases = (
+				9E3893A1857CCCB9420C1E69 /* Check Pods Manifest.lock */,
+				CE094BF51C7DA75C00CFB209 /* Sources */,
+				CE094BF61C7DA75C00CFB209 /* Frameworks */,
+				CE094BF71C7DA75C00CFB209 /* Resources */,
+				083F9354CB725C46BA5EF27D /* Embed Pods Frameworks */,
+				CA6D9A13945B16B7FA26F136 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XmppDemo;
+			productName = XmppDemo;
+			productReference = CE094BF91C7DA75C00CFB209 /* XmppDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE094C0C1C7DA75D00CFB209 /* XmppDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE094C191C7DA75D00CFB209 /* Build configuration list for PBXNativeTarget "XmppDemoUITests" */;
+			buildPhases = (
+				CE094C091C7DA75D00CFB209 /* Sources */,
+				CE094C0A1C7DA75D00CFB209 /* Frameworks */,
+				CE094C0B1C7DA75D00CFB209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE094C0F1C7DA75D00CFB209 /* PBXTargetDependency */,
+			);
+			name = XmppDemoUITests;
+			productName = XmppDemoUITests;
+			productReference = CE094C0D1C7DA75D00CFB209 /* XmppDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE094BF11C7DA75C00CFB209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "魏翔";
+				TargetAttributes = {
+					CE094BF81C7DA75C00CFB209 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					CE094C0C1C7DA75D00CFB209 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = CE094BF81C7DA75C00CFB209;
+					};
+				};
+			};
+			buildConfigurationList = CE094BF41C7DA75C00CFB209 /* Build configuration list for PBXProject "XmppDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE094BF01C7DA75C00CFB209;
+			productRefGroup = CE094BFA1C7DA75C00CFB209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE094BF81C7DA75C00CFB209 /* XmppDemo */,
+				CE094C0C1C7DA75D00CFB209 /* XmppDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE094BF71C7DA75C00CFB209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECAE41E1C7EFDAD0075DD75 /* MessageVC.xib in Resources */,
+				CE094C071C7DA75C00CFB209 /* LaunchScreen.storyboard in Resources */,
+				CE6DC2221C8414F00049AA91 /* ProfileEditVC.xib in Resources */,
+				CE094C041C7DA75C00CFB209 /* Assets.xcassets in Resources */,
+				CE3126C51C8573BE0024689B /* ChatVC.xib in Resources */,
+				CE6CBD991C81DFF200F32256 /* ProfileVC.storyboard in Resources */,
+				CECAE4181C7EFCF80075DD75 /* LoginVC.xib in Resources */,
+				CE9283A71C85EC04001D7399 /* RosterAddVC.xib in Resources */,
+				CE6DC2281C8431790049AA91 /* RosterVC.xib in Resources */,
+				CECAE41A1C7EFCF80075DD75 /* MineVC.xib in Resources */,
+				CE9956551C7F4CF20000B3FC /* RegisterVC.xib in Resources */,
+				CECAE4221C7EFDD90075DD75 /* DiscoveryVC.xib in Resources */,
+				CE094C021C7DA75C00CFB209 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE094C0B1C7DA75D00CFB209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		083F9354CB725C46BA5EF27D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3893A1857CCCB9420C1E69 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6D9A13945B16B7FA26F136 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE094BF51C7DA75C00CFB209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED3C5CF1C80B05C00502BBF /* ProfileVC.swift in Sources */,
+				CECAE41D1C7EFDAD0075DD75 /* MessageVC.swift in Sources */,
+				CE094BFD1C7DA75C00CFB209 /* AppDelegate.swift in Sources */,
+				CECAE4091C7EFC0F0075DD75 /* AppTool.swift in Sources */,
+				CECAE4171C7EFCF80075DD75 /* LoginVC.swift in Sources */,
+				CE6DC2171C83E1F80049AA91 /* ProfileEditVC.swift in Sources */,
+				CECAE4191C7EFCF80075DD75 /* MineVC.swift in Sources */,
+				CE6DC2271C8431790049AA91 /* RosterVC.swift in Sources */,
+				CECAE4051C7EF23A0075DD75 /* UIViewController+Extension.swift in Sources */,
+				CE3126C41C8573BE0024689B /* ChatVC.swift in Sources */,
+				CECAE4001C7EDF820075DD75 /* UserModel.swift in Sources */,
+				CECAE40A1C7EFC0F0075DD75 /* XmppTool.swift in Sources */,
+				CECAE4211C7EFDD90075DD75 /* DiscoveryVC.swift in Sources */,
+				CE9283A61C85EC04001D7399 /* RosterAddVC.swift in Sources */,
+				CE8535541C86D54700E14C6F /* ChatType.swift in Sources */,
+				CE9956541C7F4CF20000B3FC /* RegisterVC.swift in Sources */,
+				CED3C59C1C8099EC00502BBF /* test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE094C091C7DA75D00CFB209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE094C121C7DA75D00CFB209 /* XmppDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE094C0F1C7DA75D00CFB209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE094BF81C7DA75C00CFB209 /* XmppDemo */;
+			targetProxy = CE094C0E1C7DA75D00CFB209 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE094C001C7DA75C00CFB209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE094C011C7DA75C00CFB209 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CE094C051C7DA75C00CFB209 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE094C061C7DA75C00CFB209 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE094C141C7DA75D00CFB209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE094C151C7DA75D00CFB209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE094C171C7DA75D00CFB209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9850EA7E4F0F9F5AD5E8A4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XmppDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msucity.XmppDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(TARGET_NAME)/OC.h";
+			};
+			name = Debug;
+		};
+		CE094C181C7DA75D00CFB209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE1943C483F228E3B837F507 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XmppDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msucity.XmppDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(TARGET_NAME)/OC.h";
+			};
+			name = Release;
+		};
+		CE094C1A1C7DA75D00CFB209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XmppDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msucity.XmppDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XmppDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE094C1B1C7DA75D00CFB209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XmppDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msucity.XmppDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XmppDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE094BF41C7DA75C00CFB209 /* Build configuration list for PBXProject "XmppDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE094C141C7DA75D00CFB209 /* Debug */,
+				CE094C151C7DA75D00CFB209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE094C161C7DA75D00CFB209 /* Build configuration list for PBXNativeTarget "XmppDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE094C171C7DA75D00CFB209 /* Debug */,
+				CE094C181C7DA75D00CFB209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE094C191C7DA75D00CFB209 /* Build configuration list for PBXNativeTarget "XmppDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE094C1A1C7DA75D00CFB209 /* Debug */,
+				CE094C1B1C7DA75D00CFB209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE094BF11C7DA75C00CFB209 /* Project object */;
+}
